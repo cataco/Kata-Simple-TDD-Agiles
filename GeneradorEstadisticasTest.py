@@ -11,4 +11,7 @@ class TestGeneradorEstadisticas(TestCase):
         self.assertEqual(GeneradorEstadisticas().calcular("8"), [1], "numero elementos con 1 numero")
 
     def test_calcular_numero_elementos_dos_numeros(self):
-        self.assertEqual(GeneradorEstadisticas().calcular("8, 5"), [2], "numero elementos con 2 numeros")
+        self.assertEqual(GeneradorEstadisticas().calcular("8,5"), [2], "numero elementos con 2 numeros")
+
+    def test_calcular_numero_elementos_n_numeros(self):
+        self.assertEqual(GeneradorEstadisticas().calcular("8,5,1,4,5,3,8"), [7], "numero elementos con n numeros")
