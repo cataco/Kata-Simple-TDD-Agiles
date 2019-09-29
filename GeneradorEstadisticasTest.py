@@ -24,4 +24,4 @@ class TestGeneradorEstadisticas(TestCase):
         self.assertEqual(GeneradorEstadisticas().calcular("7"), [1,7,7,7], "promedio con un numero")
 
     def test_calcular_promedio_con_dos_numeros(self):
-        self.assertEqual(GeneradorEstadisticas().calcular("7,3"), [1,3,7,5], "promedio con dos numeros")
+        self.assertEqual(GeneradorEstadisticas().calcular("7,3"), [2,3,7,5.0], "promedio con dos numeros")
