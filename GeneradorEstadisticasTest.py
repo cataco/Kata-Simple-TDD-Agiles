@@ -24,3 +24,6 @@ class TestGeneradorEstadisticas(TestCase):
 
     def test_calcular_minimo_con_dos_numeros(self):
         self.assertEqual(GeneradorEstadisticas().calcular("5,2"), [2,2], "minimo con cadena dos numeros")
+
+    def test_calcular_minimo_con_n_numeros(self):
+        self.assertEqual(GeneradorEstadisticas().calcular("5,2,4,1"), [4,1], "minimo con cadena n numeros")
