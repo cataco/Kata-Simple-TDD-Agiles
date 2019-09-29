@@ -5,4 +5,4 @@ class GeneradorEstadisticas:
         else:
             numeros = cadena.split(",")
             numeros = list(map(int, numeros))
-            return [len(numeros), min(numeros), max(numeros)]
+            return [len(numeros), min(numeros), max(numeros), numeros[0]]
