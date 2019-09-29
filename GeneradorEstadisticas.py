@@ -1,3 +1,3 @@
 class GeneradorEstadisticas:
     def calcular(self, cadena):
-        pass
+        return [0]
