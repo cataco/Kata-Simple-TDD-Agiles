@@ -16,3 +16,6 @@ class TestGeneradorEstadisticas(TestCase):
 
     def test_calcular_maximo_con_n_numeros(self):
         self.assertEqual(GeneradorEstadisticas().calcular("3,10,8,1,50"), [5,1,50], "maximo con cadena n numeros")
+
+    def test_calcular_promedio_con_cadena_vacia(self):
+        self.assertEqual(GeneradorEstadisticas().calcular(""), [0], "promedio con cadena vacia")
