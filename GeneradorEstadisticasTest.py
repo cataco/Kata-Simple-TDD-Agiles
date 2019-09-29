@@ -16,3 +16,6 @@ class TestGeneradorEstadisticas(TestCase):
 
     def test_calcular_minimo_con_n_numeros(self):
         self.assertEqual(GeneradorEstadisticas().calcular("5,2,4,1"), [4,1], "minimo con cadena n numeros")
+
+    def test_calcular_maximo_elementos_cadena_vacia(self):
+        self.assertEqual(GeneradorEstadisticas().calcular(""), [0], "maximo con cadena vacia")
