@@ -15,3 +15,6 @@ class TestGeneradorEstadisticas(TestCase):
 
     def test_calcular_numero_elementos_n_numeros(self):
         self.assertEqual(GeneradorEstadisticas().calcular("8,5,1,4,5,3,8"), [7], "numero elementos con n numeros")
+
+    def test_calcular_minimo_cadena_vacia(self):
+        self.assertEqual(GeneradorEstadisticas().calcular(""), [0], "minimo con cadena vacia")
