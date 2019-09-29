@@ -6,4 +6,5 @@ class GeneradorEstadisticas:
             return [1, int(cadena), int(cadena)]
         else:
             numeros = cadena.split(",")
-            return [len(numeros),int(min(numeros))]
+            numeros = list(map(int, numeros))
+            return [len(numeros), min(numeros), max(numeros[0], numeros[1])]
